@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C++ with gcc. build exe",
+            "command": "C:\\mingw64\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                //"-O1",
+                "-g",
+                //"-save-temps",
+                "${workspaceFolder}/src/betterCPP/*.c*",
+                "${workspaceFolder}/src/low_level/*.c*",
+                "${workspaceFolder}/src/debug_verification/*.c*",
+                "${workspaceFolder}/src/prog/*.c*",
+                "${workspaceFolder}/src/mersenne_twister/*.c*",
+                "-o",
+                "${workspaceFolder}/bin/test.exe",
+                "-Wall",
+                "-Wextra",
+                "-lstdc++", // for gcc
+                "-Wcomment",
+                "-Wno-unknown-pragmas"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Tâche générée par le débogueur.",
+            "presentation": {
+                "clear": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
