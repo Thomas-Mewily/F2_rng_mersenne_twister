@@ -14,7 +14,7 @@ This time I used C++ over C.
 Compilation : 
 
 - Place yourself at the parent folder of `src`
-- Don't forget to create an `bin` directory in the same folder as `src`
+- Don't forget to create a `bin` directory in the same folder as `src`
 
 `g++ -O0 -g ./src/betterCPP/*.c* ./src/low_level/*.c* ./src/debug_verification/*.c* ./src/mersenne_twister/*.c* ./src/prog/*.c* -o ./bin/test.exe -Wall -Wextra -lstdc++ -Wcomment -Wno-unknown-pragmas`
 
